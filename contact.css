@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(179, 147, 210);
+  overflow: hidden;
+}
+
+#profile-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 350px;
+  background-color: purple;
+  rotate: 230deg;
+  position: fixed;
+  top: -140px;
+}
+
+#profile-image {
+  width: 140px;
+  height: 140px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  top: 22%;
+  right: 55%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(130deg);
+}
+
+.fa-plus-circle {
+  z-index: 1;
+  font-size: 50px;
+  color: purple;
+  top: 70%;
+  left: 90%;
+  position: absolute;
+}
+
+#contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#add-contact {
+  height: 280px;
+  width: 400px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px black;
+  text-align: center;
+  overflow: hidden;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+#cont-name {
+  color: red;
+  position: relative;
+  right: 31%;
+  top: -7px;
+
+
+}
+#cont-phone {
+  color: red;
+  position: relative;
+  right: 24%;
+  top: -7px;
+}
+
+#cont-phone , #cont-name{
+  display: none;
+}
+
+#heading {
+  margin-top: 40px;
+  color: purple;
+}
+
+#add-contact input {
+  padding: 10px;
+  width: 300px;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 2px solid purple;
+  border-left: 5px solid purple;
+  outline: none;
+  font-size: 16px;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+  background-color: purple;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+
+  
+}
+
+#Add-btn{
+  position: relative;
+  top: 7px;
+  margin-left: 5px;
+}
+
+#close-btn{
+  position: relative;
+  top: -30px;
+  left: 55%;
+}
+
+#main_contact-box {
+  width: 35%;
+  height: 100vh;
+  border: 1px solid inherit;
+  margin: 0 auto;
+}
+
+#contact-head {
+  width: 100%;
+  height: 20%;
+  border: 1px solid inherit;
+  text-align: center;
+  font-size: 20px;
+}
+
+#contact-head h1 {
+  margin-top: 10px;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  border-bottom: 1px solid black;
+}
+
+
+#all-contact {
+  width: 100%;
+  height: 80%;
+  padding: 15px;
+  overflow: scroll;
+}
+
+#all-contact::-webkit-scrollbar {
+  width: 5px;
+}
+
+#all-contact::-webkit-horizontal-srcollbar {
+  display: none;
+}
+
+#all-contact::-webkit-scrollbar-track {
+  background-color: inherit;
+}
+
+#all-contact::-webkit-scrollbar-thumb {
+  background-color: purple;
+}
+
+#contact {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 15px;
+}
+
+#tool {
+  width: 30%;
+  float: right;
+  margin-top: -20px;
+}
+
+#tool i {
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+/* Response Style for 930px */
+@media (max-width:930px){
+  #main_contact-box {
+  width: 50%;
+  height: 100vh;
+  border: 1px solid inherit;
+  margin: 0 auto;
+}
+}
+
+
+
+/* Tablet styles (770px and below) */
+@media (max-width: 770px) {
+  #main_contact-box {
+    width: 60%;
+  }
+  
+  #profile-box {
+    width: 130px;
+    height: 300px;
+    top: -120px;
+  }
+  
+  #profile-image {
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    right: 60%;
+  }
+  
+  .fa-plus-circle {
+    top: 75%;
+    left: 85%;
+  }
+  
+  #add-contact {
+    width: 350px;
+  }
+}
+
+
+
+/* Reponsive for Mobiles*/
+@media (max-width: 567px) {
+  #profile-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 320px;
+    background-color: purple;
+    rotate: 230deg;
+    position: fixed;
+    top: -230px;
+  }
+
+  #profile-image {
+    width: 70px;
+    height: 70px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+    top: 10%;
+    right: 75%;
+  }
+
+  .fa-plus-circle {
+    z-index: 1;
+    font-size: 50px;
+    color: purple;
+    top: 90%;
+    left: 80%;
+    position: absolute;
+  }
+
+  #contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  #all-con{
+    margin-top: 10px;
+  }
+
+  #add-contact {
+    height: 280px;
+    width: 380px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+    text-align: center;
+  }
+
+  #heading {
+    margin-top: 40px;
+    color: purple;
+  }
+
+  #main_contact-box {
+    width: 95%;
+    height: 100vh;
+    border: 1px solid inherit;
+    margin: 0 auto;
+  }
+
+  #contact-head {
+    width: 100%;
+    height: 20%;
+    border: 1px solid inherit;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  #contact-head h1 {
+    margin-top: 10px;
+  }
+
+  #search {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    margin-top: 65px;
+    border-bottom: 1px solid black;
+  }
+
+  #all-contact {
+    width: 100%;
+    height: 80%;
+    padding: 15px;
+    overflow: scroll;
+  }
+}
+
+
+
+
+/* Responsive for Small Mobile 320px width */
+@media (max-width: 320px) {
+  #contact-head {
+    /* margin-top: 50px; */
+    width: 100%;
+    height: 20%;
+    border: 1px solid inherit;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  #profile-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 300px;
+    background-color: purple;
+    rotate: 230deg;
+    position: fixed;
+    top: -140px;
+  }
+
+  #profile-image {
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 37%;
+    right: 45%;
+  }
+
+  #tool {
+    width: 30%;
+    float: right;
+    margin-top: -35px;
+  }
+
+  #tool i {
+    font-size: 17px;
+    margin: 10px;
+  }
+
+  #all-con {
+    margin-top: 50px;
+    position: absolute;
+    top: 24px;
+    left: 26%;
+  }
+
+  #add-contact {
+    height: 280px;
+    width: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+    text-align: center;
+  }
+  #add-contact input {
+    padding: 10px;
+    width: 290px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 2px solid purple;
+    border-left: 5px solid purple;
+    outline: none;
+    font-size: 16px;
+  }
+}

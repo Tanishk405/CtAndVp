@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="cover">
+            <div id="login">
+                <h1>Login</h1>
+                <form action="" id="Login-form">
+                    <input type="email" name="emailId" placeholder="Email Id" required="required" class="email" id="login-email">
+                    <small id="login_email_warn"><i class="fa-solid fa-circle-exclamation"></i> Email id not registered </small>
+                    <input type="password" name="password" placeholder="Password" required="required" class="pass" id="login-pass">
+                    <small id="login_pass_warn"><i class="fa-solid fa-circle-exclamation"></i> Wrong Password </small>
+                    <button id="login-btn">Login</button>
+                    <h4>Don't have an account?<a href="#">Sign up</a></h4>
+                </form>
+            </div>
+
+            <div class="sign">
+                <h1>Sign</h1>
+                <form action="" id="sign-up-form">
+                    <input type="text" name="Name" required="required" placeholder="Name" id="name">
+                    <input type="email" name="emailId" required="required" placeholder="Email Id" class="email" id="email-sign">
+                    <small id="sign-email-warn"><i class="fa-solid fa-circle-exclamation"></i> This email already exist</small>
+                    <input type="number" name="phone" required="required" placeholder="Phone No." id="phone">
+                    <input type="password" name="password" required="required" placeholder="Password" class="pass" id="pass-sign">
+                    <button id="sign-btn">Sign up</button>
+                </form>
+                <h4>Already have an account?<a href="#">Login</a></h4>
+            </div>
+        </div>
+    </div>
+    <script src="login_signup.js"></script>
+    <script src="animate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/MarkApp/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div id="left">
+        <video>
+            <source id="vd-src" src="https://www.statushut.net/wp-content/uploads/2024/03/Anime-Attitude-Status-Videos.mp4
+            "></source>
+        </video>
+        <div id="prog-box">
+            <div id="bar"></div>
+        </div>
+        <div id="controle">
+            <div id="timming">
+                <p></p>
+            </div>
+            <div id="tool">
+                <button id="back">
+                    <i class="fa-solid fa-backward" id="back"></i>
+                </button>
+                <button id="play">
+                    <i class="fa-solid fa-circle-play"></i>
+                </button>
+                <button id="next">
+                    <i class="fa-solid fa-forward" ></i> 
+                </button>
+            </div>
+            <div id="other-tool">
+                <i class="fa-solid fa-volume-high" id="volume"></i>
+                <div id="range-cont">
+                    <input type="range" id="range-bar" min="0" max="1" step="0.1">
+                </div>
+                <i class="fa-solid fa-expand" id="full-screen"></i>
+                <i class="fa-solid fa-ellipsis-vertical" id="setting"></i>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <div id="top">
+            <h3>Play list</h3>
+            <input type="search" id="search" placeholder="search your video">
+            <i class="fa-solid fa-plus" id="plus"></i>
+            <div id="add-box" class="animate__animated animate__zoomInUp">
+                <h2>Add Videos</h2>
+                <form action="">
+                    <input type="text" placeholder="Enter Your Video Name" id="vd-name">
+                    <input type="text" placeholder="Enter Your Video Link" id="vd-link">
+                    <button id="vd-btn">Add</button>
+                    
+                </form>
+            </div>
+        </div>
+        <div id="bottom">
+
+        </div>
+    </div>
+
+</body>
+<script src="/MarkApp/vd.js"></script>
+</html>
