@@ -89,7 +89,7 @@ login_form.onsubmit = function () {
     if (login_email_val == correct_email) {
       if (login_pass_val == correct_pass) {
         sessionStorage.setItem("user", login_email_val);
-        location.replace("/MarkApp/profile.html");
+        location.replace("profile.html");
         alert("login success");
       } else {
         login_pass_warn.style.display = "block";
