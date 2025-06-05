@@ -90,7 +90,6 @@ login_form.onsubmit = function () {
       if (login_pass_val == correct_pass) {
         sessionStorage.setItem("user", login_email_val);
         location.replace("profile.html");
-        alert("login success");
       } else {
         login_pass_warn.style.display = "block";
         login_pass.style.borderBottomColor = "red";
