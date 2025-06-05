@@ -1,7 +1,7 @@
 var user_name = document.querySelector("#user-name");
 
 if (sessionStorage.getItem("user") == null) {
-  window.location.replace("/app/Login/html/index.html");
+  window.location.replace("index.html");
 } else {
   // logout coding
   var logout = document.querySelector("#log-out");
