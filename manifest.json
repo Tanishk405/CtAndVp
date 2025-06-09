@@ -1,11 +1,17 @@
 {
-  "name": "CT & VP App",
+  "name": "CtAndVp",
   "short_name": "CTVP",
   "start_url": "/CtAndVp/",
   "display": "standalone",
-  "icons": [{
-    "src": "icon.png",
-    "sizes": "192x192",
-    "type": "image/png"
-  }]
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "id": "7",
+  "description": "nothing"
 }
